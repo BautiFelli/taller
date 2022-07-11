@@ -30,14 +30,16 @@ h6, h5{
   margin-left: 10px;
   font-family: 'Kumbh Sans', sans-serif;
 }
+p, h4{
+  width: 60%;
+}
 
 .container {
-  margin: 0px;
   font-family: 'Kumbh Sans', sans-serif;
   box-sizing: content-box;
 }
 
-.header, .buscar, .menu, .live, .temp, .usuario, .cronishop{
+.header, .buscar, .menu, .live, .temp, .usuario, .cronishop, .clubCr{
 display:flex;
 flex-direction: row;
 padding: 10px;
@@ -51,7 +53,6 @@ align-items: center;
   text-align: center;
   align-items: center;
   background-color: #EFEFEF;
-  width: 100%;
 }
 
 .buscar, .menu{
@@ -66,34 +67,45 @@ border-radius: 20px;
 padding: 0.5%;
 }
 .logo{
-  margin-left: 20%;
+  margin-left: 15%;
 }
 .usuario img{
   margin-left: 10px;
 }
 .usuario{
-margin-left: 20%;
+margin-left: 15%;
 }
 
 .aa{
 margin-left: 20%;
 margin-right: 40%;
 }
+
+.cronishop{
+margin-left: 28%;
+}
+
 .aa h6{
   font-style: italic;
   font-weight: 100;
-
 }
+
 
 .conteneHeader2{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
+}
+
+.clubCr{
+  float: right;
 }
 
 .Titulos{
 margin: 5%;
+width: 60%;
 }
 */
 #carouselExampleIndicators{
@@ -115,4 +127,8 @@ height: 10px;
   border-radius: 100%;
   width:10px;
   height: 10px;
+}
+
+.placas{
+  display: block;
 }
