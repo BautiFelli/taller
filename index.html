@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/png" href="img/c.png">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/index.css">
@@ -52,10 +53,13 @@
       </div>
     </div>
     <div class="conteneTitulos">
+      <p input type="button">[Escribe tu título]</p>
       <div class="Titulos">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
 
           <div class="carousel-inner">
+            <div class="conteneCarru">
+
             <div class="textostitulos">
 
               <div id="textost" class="carousel-item active">
@@ -70,7 +74,7 @@
                 <h6>Título de la comunidad</h6>
               </div>
             </div>
-
+          </div>
           </div>
           <div id="botonesgeneral" class="carousel-indicators">
             <button id="botonoficial" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -213,21 +217,113 @@
         <!-- CREA TU PLACA -->
         <div class="placa no-mostrar" id="placa">
           <img input type="button" onclick="cerrarPlaca()"  src="img/cruz.png" id="cruzPlaca" alt="">
-      <img id="imgPlaca" src="img/placa.png" alt="">
+          <img id="imgPlaca" src="img/placa.png" alt="">
           <div class="crearPlaca">
 
             <input type="text" name="botonPlaca" id="botonPlaca" placeholder="Escribe tu placa..." value="">
           </div>
-<button type="button" onclick="cerrarPlaca()" name="Publicar">Publicar</button>
+          <button type="button" onclick="cerrarPlaca()" name="Publicar">Publicar</button>
 
         </div>
 
-        <!-- MENSAJE MODERADOR -->
-      <div class="titulo no-mostrar" id="moderador">
-        <img input type="button" onclick="cerrarModerador()" id="cruzPlaca" src="img/cruz.png" alt="">
-        <h3 id="moderaFondo">Tu título será publicado luego de ser aprobado</h3>
-      </div>
+        <!-- MENSAJE MODERADOR
+        <div class="titulo no-mostrar" id="moderador">
+          <img input type="button" onclick="cerrarModerador()" id="cruzPlaca" src="img/cruz.png" alt="">
+          <h3 id="moderaFondo">Tu título será publicado luego de ser aprobado</h3>
+        </div>    -->
 
+
+               <!-- Comentarios -->
+
+               <div class="comentariosgeneral">
+                 <div class="contenedorcomentar">
+                 <div class="comentar">
+                   <h3>Escribe tu comentario</h2>
+                   </div>
+                 </div>
+                 <div class="contenedorcomentariosabajo">
+                   <div class="comentariosabajo">
+                     <img id="imgcomentarios" src="img/comentariop.png" alt="">
+                     <h2>Alejando Ruiz</h2>
+                     <p>Que mundo cruel</p>
+                     <div class="piecomgrl">
+                       <h4>Responder</h4>
+                       <img id="like" src="img/like.png" alt="">
+                       <img id="dislike" src="img/dislike.png" alt="">
+                     </div>
+                   </div>
+                   </div>
+                   <div class="contenedorcomentariosabajo">
+                   <div class="comentariosabajo">
+                     <img id="imgcomentarios" src="img/comentariop2.png" alt="">
+                     <h2>Sandra Vega</h2>
+                     <p>Jajajaja como que zombi</p>
+                     <div class="piecomgrl">
+                       <h4>Responder</h4>
+                       <img id="like" src="img/like.png" alt="">
+                       <img id="dislike" src="img/dislike.png" alt="">
+                     </div>
+                   </div>
+                   </div>
+                   <div class="contenedorcomentariosabajo">
+                   <div class="comentariosabajo">
+                     <img id="imgcomentarios" src="img/comentariop3.png" alt="">
+                     <h2>Aquiles Lozada</h2>
+                     <p>Que mal que estamos hermano</p>
+                     <div class="piecomgrl">
+                       <h4>Responder</h4>
+                       <img id="like" src="img/like.png" alt="">
+                       <img id="dislike" src="img/dislike.png" alt="">
+                     </div>
+                   </div>
+                   </div>
+        <!--Botonreaccion -->
+                   <section class="contenedor">
+                   <button type="" class="btn_reaccion">
+                       <span>Reaccionar</span>
+                       <div class="reacciones">
+                           <div class="reaccion">
+                               <img src="img/like.png" alt="">
+                               <span>Bien</span>
+                           </div>
+                           <div class="reaccion">
+                               <img src="img/reaccion2.png" alt="">
+                               <span>Me encanta</span>
+                           </div>
+                           <div class="reaccion">
+                               <img src="img/reaccion3.png" alt="">
+                               <span> Jajajaja</span>
+                           </div>
+                           <div class="reaccion">
+                               <img src="img/reaccion4.png" alt="">
+                               <span>Nooo</span>
+                           </div>
+                           <div class="reaccion">
+                                <img src="img/reaccion5.png" alt="">
+                               <span>Me enoja</span>
+                           </div>
+                       </div>
+                   </button>
+                   </section>
+                 </div>
+
+               </div>
+          <div class="piedepagina">
+            <div class="cronicapie">
+              <img src="img/cronicapie.png" alt="">
+          </div>
+          </div>
+          <div class="piedepagina2">
+            <div class="cronicapie2">
+              <div class="seccion1" >
+         <p class="secciones">¡Seguinos!</p>
+         <img src="img/redes.png" class="secciones2"alt="">
+          </div>
+          <div class="pieultimo">
+              <img src="img/pie.png" alt="" >
+          </div>
+
+          </div>
       </div>
 
 

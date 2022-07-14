@@ -17,8 +17,14 @@ placa.classList.remove('no-mostrar');
 function cerrarPlaca(){
   var placa=document.getElementById('placa');
   placa.classList.add('no-mostrar');
+  resetearPlaca();
 }
 
+function resetearPlaca(){
+  var inputPlaca=document.getElementById("botonPlaca");
+  inputPlaca.value="";
+}
+/*
 function abrirModerador(){
  var overlay=document.getElementById('moderador');
  var seccionPlaca=document.getElementById('placa');
@@ -30,3 +36,4 @@ function cerrarModerador(){
   var placa=document.getElementById('moderador');
   moderador.classList.add('no-mostrar');
 }
+*/
