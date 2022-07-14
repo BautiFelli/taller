@@ -102,7 +102,7 @@
           <button type="button" class="btn2" name="button"> Ver más</button>
         </div>
         <div class="botonCrearPlaca">
-          <button type="button" class="btn" name="button">Crea tu placa</button>
+          <button type="button" class="btn"  onclick="abrirPlaca()" name="button">Crea tu placa</button>
         </div>
       </div>
 
@@ -177,13 +177,13 @@
         </div>
         <!-- POP UP COMENTARIO -->
 
-                 <!-- Primer user -->
-    <div class="overlay no-mostrar" id="overlay">
+        <!-- Primer user -->
+        <div class="overlay no-mostrar" id="overlay">
           <img input type="button" onclick="cerrarPopUp()" id="cruz" src="img/cruz.png" alt="">
-            <div class="linea">              <!-- div para poner en block linea y texto -->
-              <img src="img/comen1.png" alt="">
-              <h6>Creado por Marta Ramírez hace 5 hs</h6>
-            </div>
+          <div class="linea">              <!-- div para poner en block linea y texto -->
+            <img src="img/comen1.png" alt="">
+            <h6>Creado por Marta Ramírez hace 5 hs</h6>
+          </div>
           <p>El lugar más turbulento</p>
           <div class="pieDeComen">    <!-- div para pie de comentario (share, like)  -->
             <img src="img/like.png" alt="">
@@ -193,27 +193,42 @@
             <img id="share" src="img/share.png" alt="">
           </div>
 
-                 <!-- Segundo user -->
-            <div class="linea">              <!-- div para poner en block linea y texto -->
-              <img src="img/comen2.png" alt="">
-              <h6>Creado por Lautaro Gomez hace 1 día</h6>
-            </div>
-            <p>Yo tuve un episodio similar en ese barrio</p>
-            <div class="pieDeComen">    <!-- div para pie de comentario (share, like)  -->
-              <img src="img/like.png" alt="">
-              <h6>2</h6>
-              <img src="img/dislike.png" alt="">
-              <h6 >1</h6>
-              <img id="share" src="img/share.png" alt="">
-            </div>
-
-
+          <!-- Segundo user -->
+          <div class="linea">              <!-- div para poner en block linea y texto -->
+            <img src="img/comen2.png" alt="">
+            <h6>Creado por Lautaro Gomez hace 1 día</h6>
+          </div>
+          <p>Yo tuve un episodio similar en ese barrio</p>
+          <div class="pieDeComen">    <!-- div para pie de comentario (share, like)  -->
+            <img src="img/like.png" alt="">
+            <h6>2</h6>
+            <img src="img/dislike.png" alt="">
+            <h6 >1</h6>
+            <img id="share" src="img/share.png" alt="">
           </div>
 
 
+        </div>
 
+        <!-- CREA TU PLACA -->
+        <div class="placa no-mostrar" id="placa">
+          <img input type="button" onclick="cerrarPlaca()"  src="img/cruz.png" id="cruzPlaca" alt="">
+      <img id="imgPlaca" src="img/placa.png" alt="">
+          <div class="crearPlaca">
+
+            <input type="text" name="botonPlaca" id="botonPlaca" placeholder="Escribe tu placa..." value="">
+          </div>
+<button type="button" onclick="cerrarPlaca()" name="Publicar">Publicar</button>
 
         </div>
+
+        <!-- MENSAJE MODERADOR -->
+      <div class="titulo no-mostrar" id="moderador">
+        <img input type="button" onclick="cerrarModerador()" id="cruzPlaca" src="img/cruz.png" alt="">
+        <h3 id="moderaFondo">Tu título será publicado luego de ser aprobado</h3>
+      </div>
+
+      </div>
 
 
     </body>

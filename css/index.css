@@ -250,21 +250,24 @@ span{
 }
 
 .notaTexto h6{
+  margin: 10px 0px;
+}
+.notaTexto p{
   margin-bottom: 10px;
 }
-
 .aaa{
   text-align: center;
   justify-content: center;
   width: 60%;
+
 }
-/*  */
+
 
 .overlay{
   display: flex;
   position: absolute;
   top: 165vh;
-  right: 15vh;
+  right:22vh;
   flex-direction: column;
   justify-content: center;
   float: right;
@@ -272,9 +275,9 @@ span{
   border: 2px grey solid;
   padding: 10px;
 }
-
+/*  */
 .no-mostrar{
-display: none;
+  display: none;
 }
 
 #cruz{
@@ -289,7 +292,7 @@ display: none;
   display:flex;
   flex-direction: row;
   align-items: center;
-  border-bottom: 1px yellow solid;
+  border-bottom: 2px yellow solid;
 }
 
 .linea h6{
@@ -303,6 +306,7 @@ display: none;
   justify-content: flex-end;
   float: right;
   margin: 10px 0px;
+    filter: opacity(60%);
 }
 
 .pieDeComen img{
@@ -323,5 +327,74 @@ display: none;
   width: 100%;
   border-bottom: 1px yellow solid;
   padding: 10px;
+}
 
+.placa{
+  background: rgba(0, 0, 0, .7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#imgPlaca{
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+}
+
+#botonPlaca{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Inter', sans-serif;
+  border: 0px;
+  border-radius: 5px;
+  background-color: none;
+  box-shadow:  inset 0 -3em 3em rgba(0,0,0,0.9),
+}
+
+#cruzPlaca{
+  height: auto;
+  margin-left: 68%;
+  justify-content: flex-end;
+  align-items: flex-end;
+  float: right;
+  width: 2%;
+  filter: invert(100%);
+
+}
+
+.placa button{
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: yellow;
+  color: black;
+  border: none;
+  font-weight: bolder;
+  padding: 5px 15px;
+
+}
+#moderaFondo{
+  width: 70%;
+  padding: 2%;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  text-align: center;
+  font-family: 'Asap', sans-serif;
+  font-size: 16px;
+}
+
+
+.no-mostrar{
+  display: none;
 }
