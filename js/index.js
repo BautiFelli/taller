@@ -32,3 +32,12 @@ function abrirPopOrg(){
   var popOrg= document.getElementById("popOrg");
   popOrg.classList.remove("no-mostrar");
 }
+
+function redirect_Page () {
+  location.replace("../pantallas/Siembra.html");
+   } 
+
+setTimeout(redirect_Page, 5000);
+    
+ 
+  
