@@ -35,9 +35,8 @@ function abrirPopOrg(){
 
 function redirect_Page () {
   location.replace("../pantallas/Siembra.html");
+   }
+   
+function redirect_Page2 () {
+  location.replace("../pantallas/secarGranos.html");
    } 
-
-setTimeout(redirect_Page, 5000);
-    
- 
-  
