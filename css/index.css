@@ -73,6 +73,10 @@ textarea:focus, input:focus{
 
 .container1 button{
   margin-top: 5%;
+  margin-left: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #textWhite{
@@ -80,9 +84,24 @@ textarea:focus, input:focus{
 }
 
 
-.pagina2{
+  .pagina2{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+#imperioFairtrade h1{
+ justify-content: center;
+ text-align: center;
+}
+
+.comercioJusto{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 #textLat0{
@@ -102,7 +121,6 @@ textarea:focus, input:focus{
   justify-content: center;
 }
 .segundos{
-background-color: #F1C1A2;
 padding: 2% 0%;
 margin-right: 5%;
 }
@@ -181,7 +199,7 @@ margin: 0%;
   display: flex;
   flex-direction: row;
   border-radius: 25px;
-  top:1100px;
+  top:1200px;
 }
 
 .popUp h4{
@@ -195,6 +213,8 @@ margin: 0%;
 
 .container3 h1{
   font-size: 3.5em;
+  text-align: center;
+  margin: none;
 }
 
 .container3 h1{
@@ -223,6 +243,7 @@ margin: 0%;
   margin-top: 200px;
   padding: 100px 0px;
   background-color: #FFEDCB;
+  text-align: center;
 }
 
 .preg3raPantalla h2{
@@ -231,6 +252,8 @@ margin: 0%;
 
 .container3 h3{
   font-size: 1.5em;
+  text-align: center;
+  margin: none;
 }
 
 .container3 h2{
@@ -261,9 +284,16 @@ padding-left: 10%;
 
 #fondoArboles{
   position: absolute;
-  width: 99%;
-  padding-top: 4%;
-  height: 68%;
+  width: 100%;
+ padding: 0;
+  height: 75%;
+  right: 0;
+}
+
+#cartelConv{
+  position: absolute;
+  right: 70%;
+  margin-top: 8.5%;
 }
 
 #boton1defo{
@@ -281,9 +311,11 @@ padding-left: 10%;
 
 #fondoTalado{
   position: absolute;
-  width: 99%;
-  padding-top:24em;
-  height: 10.5em;
+  width: 100%;
+  padding: 0%;
+  right: 0;
+  top: 77%;
+
 }
 
 .clickSemillas{
@@ -320,8 +352,10 @@ gap:25%;
 
 #fondoTalado2{
   position: absolute;
-width: 99%;
-padding-top: 24em;
+width: 100%;
+right: 0;
+padding: 0%;
+padding-top: 24.5%;
 }
 
 #nube{
@@ -389,8 +423,10 @@ padding-top: 24em;
 
 #fondoFrutos{
   position: absolute;
-width: 99%;
-padding-top: 40% ;
+width:100%;
+padding: 0;
+right: 0;
+padding-top: 30% ;
 }
 
  #fondoFrutos2{
@@ -433,7 +469,7 @@ font-size:24px;
 top: 8.4em;
 }
 
-.container10 h1, .container11 h1, .container12 h1, .container14 h1, .container15 h1, .container16 h1, .container17 h1, .container18 h1, .container19 h1, .container20 h1{
+.pagina2 h1, .container10 h1, .container11 h1, .container12 h1, .container14 h1, .container15 h1, .container16 h1, .container17 h1, .container18 h1, .container19 h1, .container20 h1, .containerFinal2 h1, .containerFinal h1{
 font-size: 55px;
 display: flex;
 justify-content: center;
@@ -590,8 +626,17 @@ font-size: 28px;
 
  #ferti{
   position: absolute;
-  width: 99%;
-  height: 42.5em;
+  width: 100%;
+  height: 96%;
+  right: 0%;
+  padding: 0%;
+ }
+
+ #fertiNatu{
+  position: absolute;
+  float: bottom;
+  bottom: 0.5%;
+  left: 55%;
  }
  
 .tierra{
@@ -607,8 +652,7 @@ font-size: 28px;
 }
 
 .gusanos{
-  position: relative;
-  padding-top: 29%;
+  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -617,6 +661,7 @@ font-size: 28px;
   gap: 16%;
   margin-bottom: none;
   padding-bottom: none;
+  top: 80%;
 }
 
 .botones{
@@ -654,10 +699,11 @@ font-size: 28px;
 }
 
 #pantalla15{
-  background-image:    url(../img/fertilizadaOrg.png);
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center; 
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  right: 0%;
+  padding: 0%;
 }
 
 .container15{
@@ -671,8 +717,10 @@ padding-left: 3%;
 
 #cosechaOrg{
   position: absolute;
-  width: 99%;
-  height: 42.5em;
+  width: 100%;
+  right: 0;
+  height: 94%;
+  padding: 0%;
  }
 
  #botonPO4{
@@ -682,25 +730,25 @@ padding-left: 3%;
 }
 
 #hoverBolsa{
-  position: relative;
-  height: 8em;
-  bottom: 8em;
-  left: 54%;
+  position: absolute;
+  height:35%;
+  top: 60%;
+  left: 48%;
 } 
 
 #popOrg{
-  position: relative;
-  bottom: 40em;
+  position: absolute;
+  bottom: 40%;
 }
 
-#pantalla17, #pantalla18{
-  background-image:    url(../img/cosechaOrg.png);
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center; 
-    width: 100%;
-    height: 100%;    
+#fondoPantalla17, #fondoPantalla18{
+  position: absolute;
+  width: 100%;
+  right: 0;
+  height: 94%;
+  padding: 0%;
 }
+
 
 #boton17{
 position: relative;
@@ -710,7 +758,7 @@ top: 27em;
 
 .tipitos{
 position: relative;
-padding-top: 29%;
+padding-top: 24%;
 display: flex;
 flex-direction: row;
 justify-content: center;
@@ -725,13 +773,12 @@ padding-bottom: none;
 height:10em;
 }
 
-#pantalla19, #pantalla20{
-background-image:    url(../img/secaOrg.png);
-background-size:     cover;                      /* <------ */
-background-repeat:   no-repeat;
-background-position: center center; 
+#fondoPantalla19, #fondoPantalla20{
+  position: absolute;
 width: 100%;
-height: 100%;   
+height: 94%;   
+right: 0;
+padding: 0;
 }
 
 #boton19, #boton20{
@@ -803,7 +850,8 @@ top: 17em;
 
 .animacionOrganica{
 width: 100%;
-height:975px;
+height:98vh;
+bottom: 0.1%;
 animation: achicarse 20s linear both;
 }
 
@@ -820,12 +868,12 @@ animation: achicarse 20s linear both;
 
 .animacionConv{
   width: 100%;
-height:975px;
+height:98vh;
 animation: conv 20s linear both;
 }
 
 @keyframes conv{
-  0% {background-image: url(../img/FINAL1.png);}
+  0% {background-image: url(../img/FINALl1.png);}
   25% {background-image: url(../img/FINAL1.png);}
   50%{background-image: url(../img/FINAL2.png);}
   75%{background-image: url(../img/FINAL3.png);}
@@ -870,4 +918,21 @@ animation: conv 20s linear both;
   float: right;
   width: 2%;
   filter: invert(100%);
+}
+
+#btnReinicio{
+  position: relative;
+  left: 8%;
+}
+
+#btnReinicio2{
+  position: relative;
+  left: 70  %;
+}
+
+.gifBolsas{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 700px;
 }

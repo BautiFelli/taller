@@ -5,6 +5,23 @@
   <link rel="stylesheet" href="../css/index.css">
   <script src="../js/index.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script>
+    // DISPLAY DEL INPUT
+    window.onload = function(){
+      document.getElementById("numberInput").innerText = localStorage.getItem("conteo")
+    }
+  
+    // DISPLAY DEL RELOJ
+      var dataDisplay = document.getElementById("relojDiv")
+      localStorage.setItem("reloj", 0);
+  
+      function refreshData() {
+        var conteo = localStorage.getItem("reloj")
+        var res = localStorage.setItem("reloj", parseInt(conteo) + 1);
+        document.getElementById("relojDiv").innerHTML = conteo;
+      }
+      setInterval(refreshData, 1000);
+    </script>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tiempo tazas consumidas</title>
@@ -17,15 +34,18 @@
         <h1 id="textLat0">AMÉRICA</h1>
         <h1 id="textLat">LATINA</h1>
       </div>
+      <div class="segundos">
+        <img id="gifReloj" src="../img/relojgif.gif" alt="">
+        <h5 style="margin-left: 45%;" id="relojDiv"></h5>
+      </div>
     </div>
     <!-- TIEMPO DE TAZAS CONSUMIDAS ACTUALIZABLES -->
     <div class="segundosTazasConsumidas">
       <div class="Xtazas">
-        <img src="../img/003.svg" alt="">
+        <img src="../img/03.svg" alt="">
+        <p><span  id="numberInput"></span></p>
       </div>
-      <div class="segundos">
-        <img id="gifReloj" src="../img/relojgif.gif" alt="">
-      </div>
+      
       <div class="tazaNro">
         <img src="../img/03.svg" alt="">
       </div>

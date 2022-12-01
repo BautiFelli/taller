@@ -66,10 +66,6 @@ span{
   color: #FFFFFF;
 }
 
-.pagina2{
-  display: flex;
-  flex-direction: row;
-}
 
 #textLat0{
   margin-left: 100px;
@@ -233,6 +229,21 @@ padding-left: 10%;
   width: 99%;
   padding-top: 4%;
   height: 68%;
+}
+
+#arboleda{
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  bottom: 0.01em;
+  right: 0px;
+}
+
+#circuPO1{
+  position: absolute;
+  top: 84%;
+  left: 13%;
 }
 
 #boton1defo{
@@ -402,7 +413,7 @@ font-size:24px;
 top: 8.4em;
 }
 
-.container10 h1, .container11 h1, .container12 h1, .container14 h1, .container15 h1, .container16 h1, .container17 h1, .container18 h1, .container19 h1, .container20 h1{
+.pagina2 h1, .container10 h1, .container11 h1, .container12 h1, .container14 h1, .container15 h1, .container16 h1, .container17 h1, .container18 h1, .container19 h1, .container20 h1{
 font-size: 55px;
 display: flex;
 justify-content: center;
@@ -693,7 +704,10 @@ top: 17em;
 #gifGas{
   position: absolute;
   opacity: 25%;
-  padding-bottom: 20%;
+  left: 10%;
+  top: 52%;
+  width: 1000px;
+  height: 320px;
 }
 
 .comercioPreguntaBolsas{
@@ -702,3 +716,24 @@ background-repeat: no-repeat;
 background-size: cover;
 width: 100%;
 }
+
+#cartelorga{
+  position: absolute;
+  right: 3em;
+  top: 45%;
+}
+
+#tirarpesticida{
+ position: absolute;
+ width: 100%;
+ right: 0;
+ padding: 0;
+ height: 95%;
+}
+
+#botonPesti{
+  position: absolute;
+  left: 70%;
+  top: 65%;
+}
+

@@ -1,3 +1,9 @@
+
+function setOnStorage(){
+  let input = document.getElementById("coffeCups").value
+  localStorage.setItem("conteo", input);
+}
+
 function abrirEtiquetaNO(){
     var overlay= document.getElementById('etiNo');
     overlay.classList.remove('no-mostrar');
@@ -236,7 +242,7 @@ function redirect_FinalConv(){
 
   document.getElementById("totalPorcentaje").innerText = total;
 
-  if(total<=0 && brasil==70){
+  if(total<=0 && brasil>=70){
     location.replace("../pantallas/3raPantalla.html");
   }else if(total<=0 && brasil<70){
     location.replace("3raIncorrecto.html");
@@ -253,7 +259,7 @@ function redirect_FinalConv(){
   
     document.getElementById("totalPorcentaje").innerText = total;
   
-    if(total<=0 && brasil==70){
+    if(total<=0 && brasil>=70){
       location.replace("../pantallas/3raPantalla.html");
     }else if(total<=0 && brasil<70){
       location.replace("3raIncorrecto.html");
@@ -270,7 +276,7 @@ function redirect_FinalConv(){
     
       document.getElementById("totalPorcentaje").innerText = total;
     
-      if(total<=0 && brasil==70){
+      if(total<=0 && brasil>=70){
         location.replace("../pantallas/3raPantalla.html");
       }else if(total<=0 && brasil<70){
         location.replace("3raIncorrecto.html");
@@ -287,7 +293,7 @@ function redirect_FinalConv(){
       
         document.getElementById("totalPorcentaje").innerText = total;
       
-        if(total<=0 && brasil==70){
+        if(total<=0 && brasil>=70){
           location.replace("../pantallas/3raPantalla.html");
         }else if(total<=0 && brasil<70){
           location.replace("3raIncorrecto.html");
@@ -317,5 +323,10 @@ function closePop4(){
 
 function openPopLat(){
   var pop= document.getElementById('popLat');
+  pop.classList.remove('no-mostrar');
+}
+
+function openPopPO1(){
+  var pop= document.getElementById('popPO1');
   pop.classList.remove('no-mostrar');
 }
