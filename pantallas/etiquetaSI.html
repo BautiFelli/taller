@@ -10,15 +10,16 @@
   <title>Etiqueta tu producto SI</title>
 </head>
 <body>
-  <div class="container13">
+  <div class="container13 col-12">
     <h1>ETIQUETA TU PRODUCTO</h1>
-    <img id="tuesteGranos2" src="../img/etiqueta.png" alt="">
+    <img id="tuesteGranos2Eti" src="../img/etiqueta.png" alt="">
     <!-- <img id="circuGranos3" src="../img/circuSemillas.svg" alt="">  -->
     <input onclick="abrirEtiquetaSI()" id="etiquetaCJ" type="image" src="../img/fairtrade2.svg">
   </div>
 
 
   <div id="etiSi" class="overlay no-mostrar">
+    <img id="cruzPopEtiSi" onclick="closePop4()" src="../img/cruz.png" alt="">
     <div class="popUpEtiquetaOrganico">
       <h1>¡Al usar esta etiqueta!</h1>
       <h3>Tu producto cumple con las normas de <strong>Comercio Justo</strong>.</h3>
@@ -37,8 +38,11 @@
         <h4>Derechos Humanos</h4>
         </div>
       </div>
-
-      <button><span><strong>Aprende más</strong></span></button>
+      
+      <div class="botonesEti">
+      <button class="btnEti "><a href="../pantallas/Deforestacion1Conv.html"><span id="textWhite"><strong>Proceso Convencional</strong></span></a></button>
+      <button ><a href="ImperioBeneficio.html"><span id="textWhite"><strong>Aprende más</strong></span></a></button>
+      </div>
 
     </div>
   </div>

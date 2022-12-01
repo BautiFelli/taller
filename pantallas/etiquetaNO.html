@@ -12,17 +12,17 @@
 <body>
   <div class="container13">
     <h1>ETIQUETA TU PRODUCTO</h1>
-    <img id="tuesteGranos2" src="../img/etiqueta.png" alt="">
+    <img id="tuesteGranos2Eti" src="../img/etiqueta.png" alt="">
     <!-- <img id="circuGranos3" src="../img/circuSemillas.svg" alt="">  -->
     <input onclick="abrirEtiquetaNO()" id="etiquetaCJ" type="image" src="../img/fairtrade2.svg">
   </div>
 
 
   <div id="etiNo" class="overlay no-mostrar">
+    <img id="cruzPopEtiNo" onclick="closePop3()" src="../img/cruz.png" alt="">
     <div id="etiSi" class="popUpEtiquetaConvencional">
       <h1>¡No podés usar esta etiqueta!</h1>
       <h3>Tu producto no cumple con las normas de <strong>Comercio Justo</strong>, como las siguientes: </h3>
-
       <div class="imagenesNormas">
         <div class="desaSos">
           <img src="../img/desaSos.png" alt="">
@@ -37,9 +37,11 @@
         <h4>Derechos Humanos</h4>
         </div>
       </div>
-
+      
+      <div class="botonesEti">
+        <button class="btnEti"><span><strong> <a href="../pantallas/ProcesoOrganico1.html">Proceso orgánico</a></strong></span></button>
       <button><span><strong> <a href="../pantallas/ImperioBeneficio.html">Aprende más </a></strong></span></button>
-
+      </div>
     </div>
   </div>
 </body>

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="../css/index.css">
+  <script src="../js/index.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +24,7 @@
         <img src="../img/003.svg" alt="">
       </div>
       <div class="segundos">
-        <h4>Reloj</h4>
+        <img id="gifReloj" src="../img/relojgif.gif" alt="">
       </div>
       <div class="tazaNro">
         <img src="../img/03.svg" alt="">
@@ -36,31 +37,43 @@
   </div>
     <div class="mapa">
       
-      <img id="mapa" src="../img/map.svg" alt="">
-
-      <div class="popUp no-mostrar">
+      <img onmouseover="openPopLat()" id="mapa" src="../img/map.svg" alt="">
+      <img style="padding-left:5%;" src="../img/toneladas.png" alt="">
+      <h2 style="padding-left:4%;">Toneladas</h2>
+      
+      <!-- POP UP LATAM -->
+      <div id="popLat" class="popUp no-mostrar">
         <img src="../img/013.svg" alt="">
         <h4>El 60% de la producción mundial de café se genera Latinoamérica</h4>
       </div>
+
     </div>
   </div>
-  <div class="container" style="padding-right:10%; padding-left: 10%;">
+  <div class="containerr" style="padding-right:10%; padding-left: 10%;">
     <div class="pregunta1">
       <h1>¿Qué país de Latinoamérica crees que es el mayor productor de café?</h1>
       <div class="col-12">
-      <a href="../pantallas/3raPantalla.html"><img src="../img/04.svg" alt=""></a>
+      <img src="../img/04.svg" alt="">
     </div>
-      <h5>100%</h5>
+      <h5><span id="totalPorcentaje">100</span>%</h5>
 
       <div class="paisesPorcentajes">
         <div class="col-3">
-        <img src="../img/05.svg" width="250px" height="250px" alt=""></div>
+        <button onmousedown="btnClick()"><img src="../img/05.svg" width="250px" height="250px" alt=""></div></button> 
         <div class="col-3">
-        <img src="../img/06.svg" width="250px" height="250px" alt=""></div>
+        <button onmousedown="btnClick2()"><img src="../img/06.svg" width="250px" height="250px" alt=""></div></button> 
         <div class="col-3">
-        <img src="../img/07.svg" width="250px" height="250px" alt=""></div>
+         <button onmousedown="btnClick3()"><img src="../img/07.svg" width="250px" height="250px" alt=""></div></button> 
         <div class="col-3">
-        <img src="../img/08.svg" width="250px" height="250px" alt=""></div>
+         <button onmousedown="btnClick4()"><img src="../img/08.svg" width="250px" height="250px" alt=""></div></button> 
+      </div>
+
+      <div class="paisesPorcentajes2">
+        <h5><span id="brasil">0</span>%</h5>
+        <h5><span id="col">0</span>%</h5>
+        <h5><span id="mex">0</span>%</h5>
+        <h5><span id="per">0</span>%</h5>
+        
       </div>
     </div>
   </div>
